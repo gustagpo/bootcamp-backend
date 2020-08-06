@@ -32,7 +32,6 @@ function validateRepositoryId(request, response, next) {
 }
 
 app.use(logRequests);
-app.use("/repositories/:id", validateRepositoryId);
 
 app.get("/repositories", (request, response) => {
   return response.json(repositories);
