@@ -44,7 +44,7 @@ app.post("/repositories", (request, response) => {
 
   repositories.push(repository);
 
-  return response.status(200).json({ message: 'Everything good'});
+  return response.status(200).json(repository);
 });
 
 app.put("/repositories/:id", (request, response) => {
